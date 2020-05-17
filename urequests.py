@@ -5,12 +5,13 @@ Adapted for Micropython by Alex Cowan <acowan@gmail.com>
 Works in a similar way to python-requests http://docs.python-requests.org/en/latest/
 """
 
+import binascii
 import socket
+
 try:
     import ussl as ssl
 except:
     import ssl
-import binascii
 
 class URLOpener:
     def __init__(self, url, method, params = {}, data = {}, headers = {}, cookies = {}, auth = (), timeout = 5):

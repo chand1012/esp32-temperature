@@ -1,6 +1,7 @@
+import time
+
 import network
 import webrepl
-import time
 
 WiFi = network.WLAN(network.STA_IF)
 WiFi.active(True)
